@@ -1,0 +1,7 @@
+name = "fullstop"
+compatibility_date = "2026-09-12"
+
+[[d1_databases]]
+binding = "fullstop_db"
+database_name = "fullstop-db"
+database_id = "19bced33-0487-435a-a686-ca618b264c67"
