@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch Access | FULL STOP</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Rubik:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body class="login-body">
+
+    <main class="login-container">
+        <header class="text-center mb-2">
+            <img src="assets/FULL STOP.jpg" alt="Logo" class="circle-logo" style="width: 80px; height: 80px; border-radius: 50%;">
+            <h2 style="font-family: 'Rubik', sans-serif; color: var(--fs-red); margin-top: 10px;">Branch Access</h2>
+        </header>
+
+        <div class="branch-id-section">
+            <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 8px;">Ilagay ang iyong Branch ID</p>
+            <input type="text" id="branch-id" placeholder="Halimbawa: FS-MABALACAT" class="modern-input">
+        </div>
+
+        <div class="pin-display" id="pin-display">
+            <div class="pin-dot"></div>
+            <div class="pin-dot"></div>
+            <div class="pin-dot"></div>
+            <div class="pin-dot"></div>
+        </div>
+
+        <div class="numpad">
+            <button class="numpad-btn" data-value="1">1</button>
+            <button class="numpad-btn" data-value="2">2</button>
+            <button class="numpad-btn" data-value="3">3</button>
+            <button class="numpad-btn" data-value="4">4</button>
+            <button class="numpad-btn" data-value="5">5</button>
+            <button class="numpad-btn" data-value="6">6</button>
+            <button class="numpad-btn" data-value="7">7</button>
+            <button class="numpad-btn" data-value="8">8</button>
+            <button class="numpad-btn" data-value="9">9</button>
+            <button class="numpad-btn action-btn" id="btn-clear" style="font-size: 1rem; color: #94A3B8; border: none; background: transparent;">CLR</button>
+            <button class="numpad-btn" data-value="0">0</button>
+            <button class="numpad-btn action-btn" id="btn-delete" style="font-size: 1rem; color: #94A3B8; border: none; background: transparent;">⌫</button>
+        </div>
+    </main>
+
+    <script src="js/auth-ui.js"></script>
+</body>
+</html>
