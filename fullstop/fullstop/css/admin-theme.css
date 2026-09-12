@@ -1,0 +1,1069 @@
+/* css/admin-theme.css */
+
+.admin-layout {
+    display: flex;
+    background-color: #F8FAFC;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+    width: 260px;
+    background: #FFFFFF;
+    border-right: 1px solid #E2E8F0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-shrink: 0;
+    transition: width 0.3s ease;
+}
+
+.sidebar-header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #E2E8F0;
+    gap: 10px;
+}
+
+.logo-box {
+    background: #FEE2E2;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.dots {
+    display: flex;
+    gap: 4px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot.yellow {
+    background: #F59E0B;
+}
+
+.dot.red {
+    background: #DC2626;
+}
+
+.brand-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+}
+
+.sidebar-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 0;
+}
+
+.nav-section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 0.75rem;
+    color: #94A3B8;
+    font-weight: 600;
+    margin: 0 20px 10px;
+    letter-spacing: 1px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    color: #64748B;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.nav-item i {
+    width: 20px;
+    text-align: center;
+}
+
+.nav-item.active {
+    background: #FEF2F2;
+    color: #DC2626;
+    border-left: 4px solid #DC2626;
+    border-radius: 0 20px 20px 0;
+    margin-right: 20px;
+}
+
+.nav-item:hover:not(.active) {
+    color: #1E293B;
+}
+
+.alert-item {
+    display: flex;
+    gap: 12px;
+    padding: 8px 20px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+
+.status-dot.red {
+    background: #DC2626;
+}
+
+.status-dot.blue {
+    background: #3B82F6;
+}
+
+.alert-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.alert-info strong {
+    color: #1E293B;
+}
+
+.alert-info span {
+    color: #94A3B8;
+    font-size: 0.75rem;
+}
+
+.sidebar-footer {
+    padding: 15px 0;
+    border-top: 1px solid #E2E8F0;
+}
+
+/* --- MAIN CONTENT & TOPBAR --- */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: margin-left 0.3s ease;
+}
+
+.topbar {
+    height: 70px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E2E8F0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #F1F5F9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 350px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    color: #64748B;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #64748B;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    background: #E2E8F0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #64748B;
+}
+
+.workspace {
+    padding: 30px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* --- HERO BANNER --- */
+.hero-banner {
+    background: linear-gradient(135deg, #E60000 0%, #B30000 100%);
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(211, 18, 37, 0.2);
+}
+
+.hero-glow {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero-tag {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FEF2F2;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
+    margin: 0 0 15px 0;
+    line-height: 1.1;
+}
+
+.hero-desc {
+    font-size: 1rem;
+    color: #FEF2F2;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-hero-solid {
+    background: white;
+    color: #D31225;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-hero-outline {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- CARDS SECTION --- */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-group h2 {
+    font-family: 'Rubik', sans-serif;
+    color: #1E293B;
+    margin: 0;
+}
+
+.badge-count {
+    background: #E2E8F0;
+    color: #64748B;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.view-toggles {
+    display: flex;
+    gap: 5px;
+}
+
+.toggle-btn {
+    background: white;
+    border: 1px solid #E2E8F0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #94A3B8;
+    cursor: pointer;
+}
+
+.toggle-btn.active {
+    color: #D31225;
+    border-color: #FCA5A5;
+    background: #FEF2F2;
+}
+
+.branch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.branch-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* NEW: Smooth transition for hover effect */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* NEW: The Hover Animation */
+.branch-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-top {
+    padding: 20px;
+    color: white;
+    position: relative;
+    height: 120px;
+}
+
+.bg-red {
+    background: linear-gradient(135deg, #EF4444, #DC2626);
+}
+
+.bg-yellow {
+    background: linear-gradient(135deg, #F59E0B, #D97706);
+}
+
+.bg-orange {
+    background: linear-gradient(135deg, #F97316, #EA580C);
+}
+
+.card-top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.card-top-header h3 {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+}
+
+.more-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 18px;
+    margin: -18px;
+    border-radius: 50%;
+}
+
+.more-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.manager-name {
+    margin: 5px 0 0 0;
+    font-size: 0.95rem;
+    /* Pinalaki nang kaunti */
+    font-weight: 600;
+    /* Ginawang bold */
+    color: #FFFFFF;
+    /* Pure white para lumitaw */
+    opacity: 1;
+    /* Tinanggal yung pagka-fade */
+    letter-spacing: 0.5px;
+    /* Konting space para madaling basahin */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    /* Anino para mag-pop out */
+}
+
+.manager-avatar {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #E2E8F0;
+    border: 4px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #64748B;
+    font-size: 1.2rem;
+}
+
+.card-bottom {
+    padding: 30px 20px 20px;
+    background: white;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #64748B;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.stat-row strong {
+    color: #1E293B;
+    font-size: 1.1rem;
+}
+
+.alert-box {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.alert-yellow {
+    background: #FEF3C7;
+    color: #B45309;
+}
+
+.alert-none {
+    background: #F1F5F9;
+    color: #64748B;
+}
+
+/* --- MODAL OVERLAY --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-card {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid #E2E8F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.25rem;
+    color: #1E293B;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #64748B;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px 25px;
+}
+
+/* INQUIRY MESSENGER STYLES */
+.inquiry-list-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #E2E8F0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.inquiry-list-item:hover,
+.inquiry-list-item.active {
+    background: #F1F5F9;
+}
+
+.inquiry-list-item .guest-name {
+    margin: 0;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+.inquiry-list-item .guest-pkg {
+    font-size: 0.8rem;
+    color: #D31225;
+    margin: 3px 0;
+    font-weight: 500;
+}
+
+.inquiry-list-item .last-msg {
+    font-size: 0.85rem;
+    color: #64748B;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.chat-bubble {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 18px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    position: relative;
+}
+
+.chat-bubble.guest {
+    align-self: flex-start;
+    background: #E2E8F0;
+    color: #1E293B;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-bubble.admin {
+    align-self: flex-end;
+    background: #D31225;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-time {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-top: 5px;
+    display: block;
+    text-align: right;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748B;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.input-group input:focus {
+    border-color: #D31225;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* --- HAMBURGER SIDEBAR COLLAPSE --- */
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar.collapsed .brand-text,
+.sidebar.collapsed .section-title,
+.sidebar.collapsed .nav-item span,
+.sidebar.collapsed .alert-info {
+    display: none;
+}
+
+.sidebar.collapsed .nav-item {
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.sidebar.collapsed .nav-item.active {
+    margin-right: 0;
+    border-radius: 0;
+    border-left: 4px solid #DC2626;
+}
+
+.sidebar.collapsed .alert-item {
+    justify-content: center;
+}
+
+/* --- GRID VS LIST VIEW TOGGLE --- */
+.branch-grid.list-view {
+    grid-template-columns: 1fr;
+}
+
+.branch-grid.list-view .branch-card {
+    display: flex;
+    height: auto;
+}
+
+.branch-grid.list-view .card-top {
+    width: 300px;
+    height: 100%;
+}
+
+.branch-grid.list-view .card-bottom {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.branch-grid.list-view .stat-row {
+    border: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+    align-items: center;
+}
+
+.branch-grid.list-view .manager-avatar {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -25px;
+}
+
+/* --- 3-DOTS ACTION DROPDOWN --- */
+.action-menu-container {
+    position: relative;
+}
+
+.action-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.action-dropdown a {
+    padding: 12px 15px;
+    color: #1E293B;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s;
+}
+
+.action-dropdown a:hover {
+    background: #F8FAFC;
+}
+
+.action-dropdown hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #E2E8F0;
+}
+
+.text-red {
+    color: #DC2626 !important;
+    font-weight: 600;
+}
+
+.text-red:hover {
+    background: #FEF2F2 !important;
+}
+
+/* Utility to hide elements */
+.d-none {
+    display: none !important;
+}
+
+
+/* --- BRANCH DETAILS VIEW --- */
+.branch-hero {
+    padding: 30px 40px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+.back-link-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+    position: relative;
+    z-index: 2;
+}
+
+.back-link-btn:hover {
+    color: white;
+}
+
+.branch-hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+}
+
+.branch-hero-content h1 {
+    font-family: 'Rubik', sans-serif;
+    margin: 0 0 5px 0;
+    font-size: 2.5rem;
+}
+
+.branch-hero-content p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.branch-hero-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-btn-white {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.icon-btn-white:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* --- TABLE STATUS BADGES --- */
+.status-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-badge.pending {
+    background: #FEF3C7;
+    color: #B45309;
+}
+
+.status-badge.dispatched {
+    background: #DBEAFE;
+    color: #1D4ED8;
+}
+
+.status-badge.delivered {
+    background: #DCFCE7;
+    color: #15803D;
+}
+
+/* --- INTERACTIVE STATUS SELECT --- */
+.status-select {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    /* Para mas malinis tignan, babawasan natin ang default dropdown arrow ng konti */
+    padding-right: 25px;
+}
+
+.status-select.pending {
+    background: #FEF3C7;
+    color: #B45309;
+}
+
+.status-select.dispatched {
+    background: #DBEAFE;
+    color: #1D4ED8;
+}
+
+.status-select.delivered {
+    background: #DCFCE7;
+    color: #15803D;
+}
+
+/* Kapag kinlik yung dropdown */
+.status-select:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   📱 MOBILE RESPONSIVENESS (Max Width: 768px)
+   ========================================= */
+@media (max-width: 768px) {
+
+    /* 1. Sidebar nagiging Off-Canvas Menu */
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        /* Nakatago sa kaliwa by default */
+        z-index: 9999;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .sidebar.active-mobile {
+        left: 0;
+        /* Lalabas kapag pinindot ang hamburger */
+    }
+
+    .main-content {
+        margin-left: 0 !important;
+        /* Para hindi mag-adjust ang body */
+    }
+
+    /* 2. Topbar adjustments */
+    .topbar {
+        padding: 0 15px;
+    }
+
+    .search-bar {
+        width: 140px;
+    }
+
+    .search-bar input {
+        font-size: 0.8rem;
+    }
+
+    .topbar-actions {
+        gap: 10px;
+    }
+
+    /* 3. Hero Banner lumiliit ang font at nag-i-stack ang buttons */
+    .hero-banner {
+        padding: 25px 20px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-hero-solid,
+    .btn-hero-outline {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* 4. Grid nagiging 1 Column */
+    .branch-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ayusin ang List View sa Mobile */
+    .branch-grid.list-view .branch-card {
+        flex-direction: column;
+    }
+
+    .branch-grid.list-view .card-top {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .branch-grid.list-view .card-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    /* 5. Modal adjust */
+    .modal-card {
+        width: 90%;
+        margin: 20px;
+    }
+
+    /* 6. Branch Details Adjustments */
+    .branch-hero {
+        padding: 20px;
+    }
+
+    .branch-hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .branch-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    /* 7. Swipeable / Scrollable Table sa Mobile */
+    .table-container {
+        padding: 15px !important;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+    /* Pipilitin ang table na maging malapad para ma-scroll pakanan */
+}
+
+/* --- TOAST NOTIFICATION SYSTEM --- */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toast-msg {
+    min-width: 250px;
+    background-color: #10B981;
+    /* Default Success Green */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: slideInRight 0.3s ease, fadeOut 0.5s ease 2.5s forwards;
+}
+
+.toast-msg.dispatched {
+    background-color: #3B82F6;
+}
+
+/* Blue */
+.toast-msg.pending {
+    background-color: #F59E0B;
+}
+
+/* Orange */
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

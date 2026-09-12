@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franchise Inquiry - FullStop</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/inquiry.css">
+</head>
+
+<body class="bg-light-gray" style="font-family: 'Inter', sans-serif;">
+    <nav class="public-nav">
+        <div class="nav-container edge-to-edge">
+            <div class="nav-logo" style="cursor: default;">
+                <img src="assets/FULL STOP.jpg" alt="FULL STOP Logo" class="circle-logo">
+                <span class="brand-name">FULL STOP</span>
+            </div>
+            <div class="nav-actions">
+                <a href="index.html" class="btn btn-login"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="inquiry-container">
+        <div class="inquiry-card">
+            <div class="inquiry-header">
+                <div>
+                    <h2 id="inquiry-header-title" style="margin:0; font-family:'Rubik'; font-size:1.5rem; color:white;">
+                        Franchise Inquiry</h2>
+                    <p style="margin:5px 0 0 0; font-size:0.9rem; color:yellow;" id="inquiry-package-name">Loading
+                        package...</p>
+                </div>
+                <i class="fa-solid fa-comments" style="font-size: 2rem; opacity: 0.8;"></i>
+            </div>
+
+            <div class="inquiry-body" id="inquiry-content">
+                <!-- Content will be dynamically loaded here by js/inquiry.js -->
+                <div style="text-align:center; padding:50px;">
+                    <i class="fa-solid fa-spinner fa-spin fa-2x text-red"></i>
+                    <p style="margin-top:15px; color:#64748B;">Loading chat...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/api.js?v=4"></script>
+    <script src="js/inquiry.js"></script>
+</body>
+
+</html>

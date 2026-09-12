@@ -1,0 +1,34 @@
+/* css/variables.css */
+:root {
+    /* Brand Colors (Extracted from your Figma design) */
+    --fs-red: #D31225;          /* Main admin header and primary buttons */
+    --fs-red-hover: #B30F1E;    
+    --fs-yellow: #F4B81A;       /* Warning states and secondary brand color */
+    --fs-orange: #E65C00;       /* Accent color for specific branches */
+    
+    /* Status Colors */
+    --status-success: #28A745;  /* Delivered */
+    --status-pending: #FFC107;  /* Pending */
+    --status-dispatch: #007BFF; /* Dispatched */
+
+    /* Neutral UI Colors */
+    --bg-main: #F4F6F8;         /* The light gray app background */
+    --bg-card: #FFFFFF;         /* White background for cards and modals */
+    --text-dark: #1E293B;       /* Main headings */
+    --text-muted: #64748B;      /* Secondary text, table headers */
+    --border-light: #E2E8F0;    /* Subtle borders for cards and tables */
+
+    /* Typography */
+    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+    
+    /* Sizing & Spacing (Mobile-First approach) */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+    
+    /* Layout Variables */
+    --bottom-nav-height: 72px;
+    --app-bar-height: 60px;
+}
